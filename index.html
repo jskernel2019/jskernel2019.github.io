@@ -1,0 +1,82 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Jskernel</title>
+  </head>
+
+  <body>
+
+    <div>
+      <p>
+      Install JS kernel on Chrome:<br>
+      1. Download <a href="/extension/jskernel_chrome.crx" download>JS kernel for Chrome</a><br> 
+      2. Open the extension setting page (chrome://extensions).<br>
+      3. Drag and drop the .crx file into Chrome browser to install the packed app.
+      </p>
+      <p>
+      Install JS kernel on Firefox:<br>
+      1. Download <a href="/extension/jskernel_firefox.zip" download>JS kernel for Firefox</a><br> 
+      2. Extract the contents of the zip file.<br>
+      3. Open the extension debugging page (about:debugging#addons).<br>
+      4. Click "Load Temporary Add-on" to install the packed app by selecting the manifest.json file.
+      </p>
+      <p>
+      Install JS kernel on Edge:<br>
+      1. Download <a href="/extension/jskernel_edge.zip" download>JS kernel for Edge</a><br> 
+      2. Extract the contents of the zip file.<br>
+      3. Open "about:flags" and tick "Enable Extension Developer Features" box.<br>
+      4. Click the "..." button at the top right of the browser.<br>
+      5. Click the "Extensions" item.<br>
+      6. Click the "Load Extension" buttion and select the directory you saved the zip file's content to.<br>
+      </p>
+    </div>
+    <p>------------------------------------------------------</p>
+    <div class = "row">
+      <div class = "text-center">
+        <p>Attack Demo</p>
+        <button class="btn btn-lg btn-primary" id = "svg-test-button">SVG Filter Test</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-primary" id = "cache-test-button">Cache Attack Test</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-primary" id = "script-test-button">Script Parsing Test</button>
+        <button class="btn btn-lg btn-primary" id = "image-test-button">Image Decoding Test</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-primary" id = "script-async-test-button">Script Parsing (Async timer) Test</button>
+        <button class="btn btn-lg btn-primary" id = "image-async-test-button">Image Decoding (Async timer) Test</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-primary" id = "float-test-button">Floating Point Test</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-primary" id = "loopscan-test-button">Loopscan Test</button>
+        <button class="btn btn-lg btn-primary" id = "loopscan-worker-test-button">Loopscan (Worker timer) Test</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-primary" id = "paper-demo-button">Paper Demo</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-primary" id = "css-test-button">CSS Animation Test</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-primary" id = "shared-buffer-test-button">Shared Buffer Test (Chrome Only)</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-primary" id = "webvtt-test-button">Webvtt Test</button>
+      </div>
+    </div>
+    <div class = "row text-center" id = "status">
+    </div>
+    <div class = "row">
+      <div class = "text-center" id="iframe-container">
+        <iframe frameBorder="0"  scrolling = "no" id="attack-iframe"></iframe>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
