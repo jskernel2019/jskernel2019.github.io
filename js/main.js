@@ -44,3 +44,11 @@ document.getElementById('shared-buffer-test-button').onclick = function(){
 document.getElementById('webvtt-test-button').onclick = function(){
     test('./webvtt/attack.html');
 };
+document.getElementById('CVE-2018-5092-test-button').onclick = function(){
+    console.log("here");
+    test('./js/CVE-2018-5092/main.html');
+};
+document.getElementById('CVE-2017-7843-test-button').onclick = function(){
+    console.log("here");
+    test('./js/CVE-2017-7843/index.html');
+};

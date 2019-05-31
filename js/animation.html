@@ -52,7 +52,7 @@ new_elem = document.createElement('script');
 document.body.appendChild(new_elem);
   console.log(window.getComputedStyle(elem,null).getPropertyValue("width"));
 window.onerror = function(){
-  console.log(window.getComputedStyle(elem,null).getPropertyValue("width"));
+  console.log("testt",window.getComputedStyle(elem,null).getPropertyValue("width"));
   res = window.getComputedStyle(elem,null).getPropertyValue("width");
   res_n = res.replace('px','');
   res_div = document.getElementById('result');
